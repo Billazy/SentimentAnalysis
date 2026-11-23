@@ -1,0 +1,14 @@
+# Build .NET
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+.vs/
+
+# Modèles ML.NET (volumineux, à régénérer)
+*.zip
+*.onnx
+
+# Système
+.DS_Store
+Thumbs.db
