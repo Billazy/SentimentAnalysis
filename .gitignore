@@ -6,7 +6,7 @@
 .vs/
 
 # Modèles ML.NET (volumineux, à régénérer)
-*.zip
+
 *.onnx
 
 # Système

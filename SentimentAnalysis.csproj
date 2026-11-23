@@ -7,6 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+	<ItemGroup>
+		<None Update="sentiment_model.zip">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="6.0.0" />
   </ItemGroup>
@@ -19,5 +24,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="SentimentAnalysis.Api\**\*.cs" />
+		<None Remove="SentimentAnalysis.Api\**\*" />
+	</ItemGroup>
 
 </Project>
