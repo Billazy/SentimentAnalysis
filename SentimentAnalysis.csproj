@@ -12,7 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Data\yelp_labelled.txt">
+    <!--<None Update="Data\yelp_labelled.txt">-->
+	  <!-- Copie automatique de tous les fichiers .txt du dossier Data
+       vers bin\Debug\net10.0\Data\ à chaque build -->
+	  <None Update="Data\**\*.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
